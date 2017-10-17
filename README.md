@@ -16,7 +16,8 @@ spring_mass = problem.Harmonic(m = 1, k = 1, initial_position = 0,
                                initial_velocity = 1, initial_time = 0)
 runge_kutta = integrator.RungeKutta(spring_mass)
 runge_kutta.step(delta = 1e-3)
-# view the current 
+# view the current data
+runge_kutta.current_data()
 ```
 
 To add new integration methods:
